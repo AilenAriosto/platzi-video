@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Platzi-Video
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Muli&display=swap")
+        link(rel="stylesheet", href="assets/css/style.css")
+    body
+        include components/header/header.pug
+        include components/search/search.pug
+        h2.categories__title Mi lista
+        include components/carousel/carousel.pug
+        h2.categories__title Tendencia
+        include components/carousel/carousel.pug
+        h2.categories__title Originales de Platzi-Video
+        include components/carousel/carousel.pug
+        include components/footer/footer.pug
+        script(src="https://code.iconify.design/1/1.0.7/iconify.min.js")

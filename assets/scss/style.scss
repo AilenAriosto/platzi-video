@@ -1,0 +1,17 @@
+@import '_variables';
+
+body {
+    margin: 0;
+    font-family: $font-family_primary;
+    background: #8f57fd;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+@import '../../components/header/_header.scss';
+@import '../../components/search/_search.scss';
+@import '../../components/carousel/_carousel.scss';
+@import '../../components/footer/_footer.scss';
+

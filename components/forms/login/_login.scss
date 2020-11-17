@@ -1,0 +1,107 @@
+
+  .login{
+      
+    @extend .flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    min-height: calc(100vh - 200px);
+  }
+
+  .login__container{
+      background-color: rgba(255, 255, 255, 0.1) ;
+      border: 2px solid $color-primary;
+      border-radius: 40px;
+      color: $color-primary;
+      padding: 60px 68px 40px;
+      min-height: 700px;
+      /* width: 300px; */
+      width: 50%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+  }
+
+  .login__container--form{
+      display: flex;
+      flex-direction: column;
+  }
+
+  .login__container--form label{
+      font-size: 14px;
+  }
+
+  .login__container--remember-me{
+      color: $color-primary;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      align-items: center;
+  }
+
+  .login__container--remember-me a{
+      color: $color-primary;
+      font-size: 14px;
+      text-decoration: none;
+
+  }
+
+  .login__container--remember-me a:hover{
+      text-decoration: underline;
+  }
+
+  .login__container--social-media > div{
+    @extend .flex;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .login__container--social-media > div > .iconify{
+      margin-right: 10px;
+      font-size: 25px;
+  }
+
+  .login__container--register{
+      font-size: 14px;
+
+  }
+
+  .login__container--register a{
+      font-size: 16px;
+      color: $color-primary;
+      font-weight: bold;
+      text-decoration: none;
+  }
+
+  .login__container--register a:hover{
+      text-decoration: underline;
+  }
+
+  .input{
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid $color-primary;
+      font-family: $font-family_primary;
+      font-size: 16px;
+      margin-bottom: 20px;
+      padding: 10px;
+      outline: none;
+      height: 50px;
+  }
+
+  input::placeholder{
+      color: $color-primary;
+  }
+
+
+
+    /* MediaQueries */
+
+    @media only screen and (max-width: 600px){
+        .login__container{
+          background-color: transparent;
+          border: none;
+          padding: 0;
+          width: 100%;
+        }
+      }
