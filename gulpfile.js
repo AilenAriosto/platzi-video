@@ -1,4 +1,4 @@
-var gulp = require('gulp');
+const gulp = require('gulp');
 var sass = require('gulp-sass');
 var pug = require('gulp-pug');
 
